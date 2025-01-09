@@ -4,13 +4,13 @@
 
 // Definibg types
 
-let userName: string = "vivek";
-let number: number = 34;
-let boolean: boolean = true;
-let skills: string[] = ["j", "ts"];
-let num: number[] = [1, 2, 3, 4];
+interface Deatails {
+  name: string;
+  age: number;
+  salary: number;
+}
 
-let userDetails: { name: string; age: number; salary: number } = {
+let userDetails: Deatails = {
   name: "vivek",
   age: 22,
   salary: 100,
