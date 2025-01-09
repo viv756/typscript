@@ -24,16 +24,19 @@
 
 type Deatails = {
   name: string;
-  age: number;
+  // union operator
+  age: number | string;
   salary: number;
   getName: () => void;
 };
 
 let userDetails: Deatails = {
   name: "vivek",
-  age: 22,
+  age: "twenty two",
   salary: 100,
   getName() {
     console.log(this.name);
   },
 };
+
+let skills : (string| number)[] = ["js","ts",12,34]
